@@ -3,6 +3,7 @@ nav {
   top: 0;
   height: 60px;
   width: 100%;
+  max-width: 100vw;
   background-color: white;
   border-top: 4px solid var(--blue);
   z-index: 100;
@@ -59,5 +60,20 @@ nav .nav-items .nav-item--icon span {
 @media (max-width: 750px) {
   nav .nav-items .nav-item--icon span {
     display: none;
+  }
+  nav .nav-items .logo {
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+  }
+
+  nav .nav-items svg {
+    position: absolute;
+    left: -28px;
+    font-size: 26px;
+  }
+  nav .nav-items {
+    padding-top: 14px;
+    max-width: 90%;
+    font-size: 0.9rem;
   }
 }

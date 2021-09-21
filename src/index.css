@@ -11,7 +11,8 @@
 }
 body {
   font-family: "Nunito Sans", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100vw;
 }
 input:focus,
 input:active {
