@@ -1,0 +1,15 @@
+.custom-container {
+  max-width: 78%;
+  margin: 60px auto;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-container {
+    max-width: 85%;
+  }
+}
+@media (max-width: 750px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}

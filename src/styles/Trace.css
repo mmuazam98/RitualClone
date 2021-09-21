@@ -1,0 +1,112 @@
+.trace-container {
+  position: relative;
+  margin-top: 80px;
+}
+.sub-container-trace {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.sub-container-trace .column:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.sub-container-trace .content {
+  /* width: 70%; */
+  padding: 10px 100px;
+}
+.sub-container-trace .content h2 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  line-height: 3.375rem;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -1.4px;
+  margin-bottom: 24px;
+}
+.sub-container-trace .content p {
+  font-family: serif !important;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--primary);
+}
+.sub-container-trace .content-link {
+  margin-top: 30px;
+}
+.sub-container-trace .content-link .link-underline {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+  transition: opacity 0.2s ease;
+  border-bottom: 2px solid currentColor;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.sub-container-trace .content-link .link-underline:hover {
+  opacity: 0.56;
+}
+@media screen and (max-width: 1290px) {
+  .sub-container-trace .content {
+    padding: 10px 50px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .sub-container-trace .column img {
+    width: 450px;
+    height: 450px;
+    transition: all 0.2s;
+  }
+  .sub-container-trace .content h2 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .sub-container-trace .column img {
+    width: 350px;
+    height: 350px;
+  }
+  .sub-container-trace .content h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .sub-container-trace .content ul {
+    margin-top: 10px;
+  }
+  .sub-container-trace .content p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .sub-container-trace .content-link:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .sub-container-trace {
+    flex-direction: column-reverse;
+  }
+  .sub-container-trace .content {
+    padding: 10px 0 10px 0px;
+  }
+  .sub-container-trace .column img {
+    width: 550px;
+    height: 375px;
+  }
+}
+@media (max-width: 610px) {
+  .sub-container-trace .column img {
+    /* width: 500px; */
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 540px) {
+  .sub-container-trace .column img {
+    width: 95%;
+  }
+}

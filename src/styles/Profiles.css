@@ -1,0 +1,215 @@
+.profiles {
+  max-width: 100%;
+  display: flex;
+  padding: 30px 40px 80px 60px;
+  height: 500px;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  user-select: none;
+}
+
+.profiles .content {
+  flex-basis: 28%;
+  color: #142b6f;
+  position: relative;
+  left: 80px;
+  z-index: 50;
+}
+
+.profiles .caption {
+  font-size: 2.125rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  min-height: 120px;
+}
+.profiles .content h5 {
+  margin-bottom: 6px;
+  font-size: 1.125rem;
+}
+.profiles .content em {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  font-family: serif;
+}
+.profiles .profile-images {
+  position: relative;
+  display: flex;
+  flex-basis: 70%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-images .img-container {
+  position: relative;
+  width: 30%;
+  height: 80%;
+}
+.profile-images .img-container-0 {
+  width: 35%;
+  height: 100%;
+}
+
+.profile-images .img-container-2 {
+  margin-right: -3vw;
+}
+.profile-images img {
+  width: 100%;
+  height: auto;
+}
+
+.profiles .forward-button,
+.profiles .backward-button {
+  padding: 20px;
+  position: absolute;
+  bottom: -10px;
+  background-color: rgba(242, 241, 245);
+  z-index: 50;
+}
+
+.profiles .forward-button {
+  left: 0;
+}
+
+.profiles .backward-button {
+  right: 0;
+}
+
+.profiles .backward-button:hover,
+.profiles .forward-button:hover {
+  zoom: 1.01;
+  cursor: pointer;
+}
+
+.profiles .profile-images svg {
+  fill: var(--primary);
+  font-size: 22px;
+}
+
+.profiles .profile-images svg.play-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  z-index: 99;
+  fill: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+@media (max-width: 1250px) {
+  .profiles {
+    padding: 30px 0 80px;
+  }
+}
+@media (max-width: 960px) {
+  .profiles .content {
+    flex-basis: 28%;
+
+    left: 40px;
+  }
+  .profiles .caption {
+    font-size: 1.725rem;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+    min-height: 120px;
+  }
+  .profiles .content h5 {
+    font-size: 1.05rem;
+  }
+  .profiles .content em {
+    font-size: 0.825rem;
+  }
+  .profiles .forward-button,
+  .profiles .backward-button {
+    padding: 15px;
+  }
+  .profiles .profile-images svg.play-btn {
+    font-size: 50px;
+  }
+}
+@media (max-width: 830px) {
+  .profiles .content {
+    flex-basis: 25%;
+    left: 10px;
+  }
+  .team-lg {
+    padding: 100px 0px 40px;
+  }
+}
+
+@media (max-width: 751px) {
+  .profiles {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .profiles .profile-images {
+    flex-basis: 50%;
+  }
+  .profiles .content {
+    flex-basis: 20%;
+  }
+  .profiles .caption {
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+    max-width: 260px;
+    max-height: auto;
+    float: left;
+  }
+  .team-lg {
+    padding: 80px 0px 40px;
+  }
+  .profiles .forward-button,
+  .profiles .backward-button {
+    bottom: -25px;
+  }
+}
+@media (max-width: 650px) {
+  .profiles .caption {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin-bottom: 0px;
+    min-height: 120px;
+  }
+  .profiles .content h5 {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+  .profiles .content em {
+    font-size: 0.725rem;
+  }
+  .profiles .forward-button,
+  .profiles .backward-button {
+    padding: 12px;
+    bottom: -20px;
+  }
+  .profile-images .img-container-0 {
+    height: 90%;
+  }
+  .team-lg {
+    padding: 40px 0px 40px;
+  }
+  .profiles .profile-images svg.play-btn {
+    bottom: 10px;
+  }
+}
+@media (max-width: 590px) {
+  .profiles .profile-images svg.play-btn {
+    bottom: 30px;
+    font-size: 40px;
+  }
+  .profiles .forward-button,
+  .profiles .backward-button {
+    padding: 10px;
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .profiles .profile-images svg.play-btn {
+    bottom: 50px;
+  }
+}

@@ -1,0 +1,127 @@
+.shop-container {
+  margin: 0 auto;
+  width: 100%;
+}
+.shop-container .shop-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+.shop-container .shop-item {
+  position: relative;
+  width: 270px;
+  height: 170px;
+  cursor: pointer;
+  /* overflow: hidden; */
+}
+.shop-container .shop-item .shop-item_image {
+  overflow: hidden;
+}
+.shop-container .shop-item .shop-item_image:hover img {
+  transform: scale(1.1);
+}
+.shop-container .shop-item img {
+  transition: all 0.3s;
+  width: 100%;
+}
+.shop-container .shop-item .shop-item_caption {
+  position: relative;
+  top: -5px;
+  text-align: center;
+  background-color: rgba(242, 241, 245);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 12px 0px;
+  color: var(--primary);
+  font-weight: 600;
+  z-index: 1;
+}
+
+/* Next section  */
+.shop-container .daily-essentials {
+  margin: 80px 0;
+}
+.shop-container .daily-essentials h2 {
+  text-align: center;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -0.2px;
+}
+.shop-container .icons-container {
+  max-width: 50%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.shop-container .icon {
+  text-align: center;
+  min-width: 130px;
+  max-width: 130px;
+  height: 120px;
+  pointer-events: none;
+}
+
+.shop-container .icon .icon_caption {
+  color: var(--primary);
+  font-weight: 600;
+}
+@media (max-width: 960px) {
+  .shop-container .shop-items .shop-item_caption {
+    padding: 6px 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .shop-container .shop-items {
+    gap: 20px;
+  }
+  .shop-container .icons-container {
+    gap: 0px;
+  }
+  .shop-container .icon {
+    min-width: 115px;
+    max-width: 115px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .shop-container .shop-items {
+    justify-content: start;
+    overflow-x: scroll;
+    gap: 15px !important;
+  }
+  .shop-container .shop-item {
+    min-width: 200px;
+    min-height: 190px;
+  }
+  .shop-container .shop-items {
+    gap: 30px;
+  }
+  .shop-container .icons-container {
+    flex-direction: column;
+    justify-content: start;
+    max-width: 100%;
+  }
+  .shop-container .icons-container .icon {
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .shop-container .icons-container .icon svg {
+    font-size: 10px;
+    height: 32px;
+    width: 32px;
+  }
+  .shop-container .icon .icon_caption {
+    position: relative;
+    top: 5px;
+    left: 10px;
+  }
+}
